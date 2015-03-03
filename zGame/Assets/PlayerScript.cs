@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour {
 	void Start () {
 		timer = FireRate;
 		allowFire = true;
+		look = new Vector3 ();
 	}
 	
 	// Update is called once per frame
@@ -36,7 +37,8 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	IEnumerator Wait(){
-		yield return new WaitForSeconds(FireRate);
+		yield return new WaitForSeconds(1f/FireRate);
+		allowFire = true;
 	}
 
 	void Aim(){	
@@ -45,6 +47,7 @@ public class PlayerScript : MonoBehaviour {
 		if(Physics.Raycast(ray, out hit)){
 			look = new Vector3(hit.point.x, transform.position.y, hit.point.z);
 			transform.LookAt(look);
+
 		}
 	}
 
@@ -53,6 +56,9 @@ public class PlayerScript : MonoBehaviour {
 		Transform target = transform.Find("Cube");
 		Instantiate(arrow, target.position, Quaternion.identity);
 		StartCoroutine(Wait ());
-		allowFire = true;
+	}
+
+	public Vector3 Look(){
+		return look;
 	}
 }
