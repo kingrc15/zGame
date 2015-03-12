@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GamePad : MonoBehaviour {
 	public float speed, SpinSpeed;
-	public CameraScript camera;
+	public CameraScript cam;
 	float movementX, movementZ;
 	
 	// Use this for initialization
@@ -12,7 +12,7 @@ public class GamePad : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		bool movement = camera.movement;
+		bool movement = cam.movement;
 		float spin = Input.GetAxis (Input.GetJoystickNames()[0]);
 		if(movement){
 			movementX = -speed * Input.GetAxis ("Vertical");

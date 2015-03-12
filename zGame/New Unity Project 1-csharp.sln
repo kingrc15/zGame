@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{702DC962-78F6-7E36-F806-ED0EAE2B934E}") = "New Unity Project 1", "Assembly-CSharp.csproj", "{FC9411EB-1B12-4154-0219-EEA7CBD09863}"
+Project("{702DC962-78F6-7E36-F806-ED0EAE2B934E}") = "New Unity Project 1", "Assembly-CSharp-vs.csproj", "{FC9411EB-1B12-4154-0219-EEA7CBD09863}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,7 +17,11 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																							GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD:New Unity Project 1/New Unity Project 1-csharp.sln
+																																																																								GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																																																																GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/New Unity Project 1-csharp.sln
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

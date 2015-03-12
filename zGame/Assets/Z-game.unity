@@ -571,8 +571,13 @@ Transform:
 --- !u!1 &10121632
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+=======
+  m_PrefabParentObject: {fileID: 100000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 10121633}
@@ -585,6 +590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_IsActive: 1
 --- !u!4 &10121633
 Transform:
@@ -604,13 +610,53 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10121632}
+=======
+  m_IsActive: 0
+--- !u!54 &471564038
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: a5d30bcb527322f4088a3978bdc7babc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &471564039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a5d30bcb527322f4088a3978bdc7babc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1ba707b9b908241bba2707dd702b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProjectileSpeed: 1
+  range: 20
+--- !u!23 &471564040
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: a5d30bcb527322f4088a3978bdc7babc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a359ecb23f4b85d4ab231fc72918e548, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -621,9 +667,16 @@ Renderer:
 --- !u!65 &10121635
 BoxCollider:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10121632}
+=======
+  m_PrefabParentObject: {fileID: 6500000, guid: a5d30bcb527322f4088a3978bdc7babc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -633,11 +686,32 @@ BoxCollider:
 --- !u!33 &10121636
 MeshFilter:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10121632}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &11571030
+=======
+  m_PrefabParentObject: {fileID: 3300000, guid: a5d30bcb527322f4088a3978bdc7babc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &471564043
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+  m_PrefabInternal: {fileID: 1933692083}
+  m_GameObject: {fileID: 471564037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalScale: {x: .100000001, y: .100000001, z: .800000012}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!1 &482733365
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100024, guid: a579f7b9fca15834e86762a5598099fd, type: 2}
@@ -850,8 +924,8 @@ MeshFilter:
 --- !u!1 &23496486
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 23496487}
@@ -868,21 +942,37 @@ GameObject:
 --- !u!4 &23496487
 Transform:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23496486}
   m_LocalRotation: {x: -.414270043, y: .253617018, z: .236434013, w: -.841521084}
   m_LocalPosition: {x: -.885835052, y: -.245380998, z: -2.92850423}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_PrefabParentObject: {fileID: 400000, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 648975992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: .75, y: .75, z: .75}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Children: []
   m_Father: {fileID: 155085221}
   m_RootOrder: 7
 --- !u!23 &23496488
 Renderer:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23496486}
+=======
+  m_PrefabParentObject: {fileID: 2300000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 648975992}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -900,9 +990,16 @@ Renderer:
 --- !u!65 &23496489
 BoxCollider:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23496486}
+=======
+  m_PrefabParentObject: {fileID: 6500000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 648975992}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -912,9 +1009,16 @@ BoxCollider:
 --- !u!33 &23496490
 MeshFilter:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23496486}
+=======
+  m_PrefabParentObject: {fileID: 3300000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 648975992}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &26976243
 GameObject:
@@ -1438,6 +1542,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 511840681}
   m_RootOrder: 1
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
 --- !u!23 &40912832
 Renderer:
   m_ObjectHideFlags: 0
@@ -84244,6 +84349,9 @@ MeshFilter:
   m_GameObject: {fileID: 2115165167}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2115839345
+=======
+--- !u!1 &1385355610
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -84659,11 +84767,72 @@ BoxCollider:
 --- !u!33 &2130073081
 MeshFilter:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2130073077}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2130757216
+=======
+  m_PrefabParentObject: {fileID: 3300032, guid: 3c3edcd99741107498a3fa19fab1bd3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 714659363}
+  m_GameObject: {fileID: 1595678178}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1702843004
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 913632739}
+    - target: {fileID: 11400004, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 913632739}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+  m_RootGameObject: {fileID: 2051688906}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1743921399
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -84875,8 +85044,61 @@ Transform:
   m_LocalScale: {x: 1, y: 5, z: 50.5}
   m_Children: []
   m_Father: {fileID: 546028533}
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_RootOrder: 6
 --- !u!1 &2136545519
+=======
+  m_RootOrder: 5
+--- !u!1001 &1933692083
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+  m_RootGameObject: {fileID: 471564037}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1951206044
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -85090,8 +85312,8 @@ Transform:
 --- !u!1 &2143527986
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2143527987}
@@ -85099,8 +85321,13 @@ GameObject:
   - 65: {fileID: 2143527989}
   - 23: {fileID: 2143527988}
   m_Layer: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_Name: Cube
   m_TagString: Untagged
+=======
+  m_Name: Capsule
+  m_TagString: Player
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85108,6 +85335,7 @@ GameObject:
 --- !u!4 &2143527987
 Transform:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143527986}
@@ -85123,6 +85351,30 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143527986}
+=======
+  m_PrefabParentObject: {fileID: 11400000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcb035d3613e50409c60e216d57315b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  FireRate: 2
+  camera: {fileID: 913632739}
+  arrow: {fileID: 100000, guid: a5d30bcb527322f4088a3978bdc7babc, type: 2}
+  look: {x: 0, y: 0, z: 0}
+  allowFire: 0
+--- !u!23 &2051688908
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300002, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85140,9 +85392,16 @@ Renderer:
 --- !u!65 &2143527989
 BoxCollider:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143527986}
+=======
+  m_PrefabParentObject: {fileID: 13600000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -85152,6 +85411,7 @@ BoxCollider:
 --- !u!33 &2143527990
 MeshFilter:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143527986}
@@ -85182,6 +85442,21 @@ Transform:
   m_GameObject: {fileID: 2143761177}
   m_LocalRotation: {x: -.414270043, y: .253617018, z: .236434013, w: -.841521084}
   m_LocalPosition: {x: -.720763087, y: -.245380998, z: -1.49787951}
+=======
+  m_PrefabParentObject: {fileID: 3300002, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2051688911
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: e5194bdae94184a459ea8491e45f07e9, type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 890842892}
@@ -85189,6 +85464,7 @@ Transform:
 --- !u!23 &2143761179
 Renderer:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:New Unity Project 1/Assets/Z-game.unity
   m_PrefabParentObject: {fileID: 2300028, guid: a579f7b9fca15834e86762a5598099fd,
     type: 2}
   m_PrefabInternal: {fileID: 103207146}
@@ -85275,6 +85551,50 @@ Transform:
   m_Father: {fileID: 1417952651}
   m_RootOrder: 8
 --- !u!1 &2145006672
+=======
+  m_PrefabParentObject: {fileID: 5400000, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!114 &2051688913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91dcd9e8f7eded46bf5caa99d25ca15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 100004, guid: 3c3edcd99741107498a3fa19fab1bd3d, type: 2}
+--- !u!114 &2051688914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: e5194bdae94184a459ea8491e45f07e9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1702843004}
+  m_GameObject: {fileID: 2051688906}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d14ba05ce179024285f54e7c9a2ab00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  SpinSpeed: 0
+  cam: {fileID: 0}
+--- !u!1 &2132042744
+>>>>>>> ade17149ef4fa2f45131f7696ec6306f8b58fed8:zGame/Assets/Z-game.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
