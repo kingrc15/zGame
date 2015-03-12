@@ -42,6 +42,7 @@ public class CameraScript : MonoBehaviour {
 		else{
 			movement = true;
 		}
-
 	}
+
+
 }
