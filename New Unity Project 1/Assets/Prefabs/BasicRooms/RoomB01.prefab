@@ -172,7 +172,7 @@ GameObject:
   - 4: {fileID: 400018}
   - 23: {fileID: 2300014}
   m_Layer: 0
-  m_Name: RoomBasic01
+  m_Name: RoomB01
   m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
