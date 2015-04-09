@@ -44,10 +44,12 @@ public class DetectionScript : MonoBehaviour {
 			Debug.DrawRay(transform.position, dir, Color.green);
 			Ray sight = new Ray (transform.position, dir);
 			if(Physics.Raycast(sight, out hit,Mathf.Infinity)){
-				found = true;
-			}
-			else{
-				found = false;
+				if(hit.collider.tag == "Player"){
+					found = true;
+				}
+				else{
+					found = false;
+				}
 			}
 		}
 	}

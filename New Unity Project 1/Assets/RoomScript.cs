@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RoomScript : MonoBehaviour {
 	public GameObject room;
+	public GameObject[] rooms;
 	bool onTrigger;
 	GameObject roomIn;
 
@@ -52,18 +53,18 @@ public class RoomScript : MonoBehaviour {
 		Vector3 nextPosition = nextRoom (other, roomIn);
 
 		if (roomTest (nextPosition)) {
-			Instantiate (room, nextPosition, Quaternion.identity);
+			Instantiate (rooms[Random.Range(0,rooms.Length)], nextPosition, Quaternion.identity);
 		}
 
 		destroyTriggers ();
 	}
 
 	Vector3[] roomTrack(){
-		GameObject[] rooms = GameObject.FindGameObjectsWithTag("Room");
+		GameObject[] Rooms = GameObject.FindGameObjectsWithTag("Room");
 		Vector3[] roomArr = new Vector3[50];
 		int i = 0;
 
-		foreach (GameObject x in rooms) {
+		foreach (GameObject x in Rooms) {
 			roomArr[i] = x.transform.position;
 			i++;
 		}

@@ -38,8 +38,9 @@ public class EnemyScript : MonoBehaviour {
 	}
 
 	void Destroy(){
+		Vector3 dir = Vector3.Normalize(player.transform.position - transform.position);
 		transform.LookAt (player.transform.position);
-		transform.position = Vector3.MoveTowards (transform.position, player.transform.position, enemySpeed * Time.deltaTime);
+		rigidbody.velocity = dir * enemySpeed;
 		Vector3 Dir = Vector3.RotateTowards (transform.position, player.transform.position, 360, 0.0f);
 		Debug.DrawLine (transform.position, player.transform.position ,Color.blue);
 	}

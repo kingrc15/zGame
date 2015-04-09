@@ -24,7 +24,10 @@ public class ProjectileScript : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter(Collision other){
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.tag == "Enemy"){
+			Destroy(other);
+		}
 		Destroy (gameObject);
 	}
 }
