@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProjectileSpeed: 1.5
-  range: 40
+  range: 100
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
