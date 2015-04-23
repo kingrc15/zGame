@@ -52,6 +52,7 @@
      <Compile Include="Assets\EnemyScript.cs" />
      <Compile Include="Assets\GamePad.cs" />
      <Compile Include="Assets\GameScript.cs" />
+     <Compile Include="Assets\Health.cs" />
      <Compile Include="Assets\PlayerScript.cs" />
      <Compile Include="Assets\ProjectileScript.cs" />
      <Compile Include="Assets\RoomScript.cs" />
