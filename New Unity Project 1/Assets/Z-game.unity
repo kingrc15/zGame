@@ -488,6 +488,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0357c4422e534be4d910582a4bbe14ca, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0357c4422e534be4d910582a4bbe14ca, type: 2}
   m_RootGameObject: {fileID: 365182211}
@@ -810,7 +814,7 @@ GameObject:
   - 135: {fileID: 666332953}
   - 23: {fileID: 666332952}
   - 114: {fileID: 666332951}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,9 +2921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rooms:
   - {fileID: 100020, guid: 3c3edcd99741107498a3fa19fab1bd3d, type: 2}
-  - {fileID: 100094, guid: a83e4ac58a8850242ae4711dce5e5bfa, type: 2}
+  - {fileID: 100070, guid: a83e4ac58a8850242ae4711dce5e5bfa, type: 2}
   - {fileID: 103088, guid: 80c2c22f7a2aabd4fb076aa0d13274bc, type: 2}
-  - {fileID: 102410, guid: d2f9fc232743cd04397715fc8b5c8de3, type: 2}
+  - {fileID: 102284, guid: d2f9fc232743cd04397715fc8b5c8de3, type: 2}
 --- !u!114 &2051688914
 MonoBehaviour:
   m_ObjectHideFlags: 0

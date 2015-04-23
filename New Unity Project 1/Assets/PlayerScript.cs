@@ -56,7 +56,6 @@ public class PlayerScript : MonoBehaviour {
 				look = x.transform.position;
 				transform.LookAt(look);
 			}
-			Debug.Log(Vector3.Distance(ray.Collision.position, x.transform.position));
 		}
 	}
 
