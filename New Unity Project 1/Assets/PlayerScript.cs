@@ -43,11 +43,19 @@ public class PlayerScript : MonoBehaviour {
 
 	void Aim(){	
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		//Debug.Log(ray);
 		RaycastHit hit;
 		if(Physics.Raycast(ray, out hit)){
 			look = new Vector3(hit.point.x, transform.position.y, hit.point.z);
 			transform.LookAt(look);
+		}
 
+		GameObject[] y = GameObject.FindGameObjectsWithTag("Enemy");
+		foreach(GameObject x in y){
+			if(Vector3.Distance(Input.mousePosition, x.transform.position) < 3){
+				look = x.transform.position;
+				transform.LookAt(look);
+			}
 		}
 	}
 

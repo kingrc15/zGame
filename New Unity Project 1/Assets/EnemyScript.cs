@@ -15,7 +15,7 @@ public class EnemyScript : MonoBehaviour {
 	void LateUpdate () {
 		player = GameObject.FindGameObjectWithTag ("Player");
 		movement = cam.GetComponent<CameraScript>().movement;
-		found = GetComponentInChildren<DetectionScript> ().found;
+		found = GetComponentInChildren<DetectionScript> ().found || GetComponentInChildren<CloseDetection>().trigger;
 
 		if(movement){
 			if(found){
