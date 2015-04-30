@@ -24,15 +24,15 @@ public class Health : MonoBehaviour {
 
 	public void AddHearts(int n) {
 		for (int i =0; i < n; i ++) {
-				Transform newheart = ((GameObject)Instantiate (heartGUI.gameObject)).transform;
-			newHeart.parent = transform;
+				Transform newHeart = ((GameObject)Instantiate (heartGUI.gameObject)).transform;
+			newHeart.parent = this.transform.parent;
 
 			int y = Mathf.FloorToInt(hearts.Count / maxHeartsPerRow);
-			int x = hears.Count - y * maxHeartsPerRow;
+			int x = hearts.Count - y * maxHeartsPerRow;
 
-			newheart.GetComponent<GUITexture>().pixelInset = new Rect(x * spacingX, y * spacingY,58,58);
+			newHeart.GetComponent<GUITexture>().pixelInset = new Rect(x * spacingX, y * spacingY,58,58);
 
-			hearts.Add (newheart);
+			hearts.Add (newHeart);
 			}
 
 	}
