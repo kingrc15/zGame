@@ -49,6 +49,7 @@
      <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\CloseDetection.cs" />
      <Compile Include="Assets\DetectionScript.cs" />
+     <Compile Include="Assets\EnemyCreation.cs" />
      <Compile Include="Assets\EnemyScript.cs" />
      <Compile Include="Assets\GamePad.cs" />
      <Compile Include="Assets\GameScript.cs" />
@@ -56,6 +57,7 @@
      <Compile Include="Assets\PlayerScript.cs" />
      <Compile Include="Assets\ProjectileScript.cs" />
      <Compile Include="Assets\RoomScript.cs" />
+     <Compile Include="Assets\Rounds.cs" />
      <Compile Include="Assets\SightScript.cs" />
      <Compile Include="Assets\spikeTrigger.cs" />
  <Reference Include="UnityEngine.UI">
