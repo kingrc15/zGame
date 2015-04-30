@@ -6,7 +6,7 @@ public class CloseDetection : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		trigger = false;
 	}
 	
 	// Update is called once per frame

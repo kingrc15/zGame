@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ProjectileScript : MonoBehaviour {
 	public float ProjectileSpeed, range;
-	public bool hit;
 	GameObject player;
 	Vector3 target, origin;
 
@@ -17,21 +16,18 @@ public class ProjectileScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log (target);
+		Debug.Log (target);
 		this.gameObject.transform.position += ProjectileSpeed * this.gameObject.transform.forward;
 		float dis = Mathf.Sqrt (Mathf.Pow ((this.gameObject.transform.position.x - origin.x), 2) + Mathf.Pow ((this.gameObject.transform.position.z - origin.z), 2));
 		if (dis > range) {
 			Destroy(gameObject);
 		}
-		hit = false;
 	}
 
-	void OnCollisionEnter(Collision other){
-        if(other.gameObject.tag == "Enemy"){
-			hit = true;
-			Debug.Log("hit");
-        }
-        Debug.Log(other.gameObject.name);
-		//Destroy (gameObject);
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.tag == "Enemy"){
+			Destroy(other);
+		}
+		Destroy (gameObject);
 	}
 }

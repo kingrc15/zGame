@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class RoomScript : MonoBehaviour {
+	public GameObject room;
 	public GameObject[] rooms;
 	bool onTrigger;
 	GameObject roomIn;
@@ -9,7 +10,7 @@ public class RoomScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		onTrigger = false;
-		roomIn = Instantiate(rooms[0], new Vector3(0,0,0), Quaternion.identity) as GameObject;
+		roomIn = Instantiate(room, new Vector3(0,0,0), Quaternion.identity) as GameObject;
 	}
 
 
@@ -24,18 +25,25 @@ public class RoomScript : MonoBehaviour {
 	}
 
 	public GameObject GetRoom(){
-		GameObject Room = rooms[0];
+		GameObject Room = room;
 		GameObject[] y = GameObject.FindGameObjectsWithTag("Room");
 		float minX = 50, minZ = 70;
 
 		foreach (GameObject x in y) {
 			if(Mathf.Abs(transform.position.x - x.transform.position.x) <= minX && Mathf.Abs(transform.position.z - x.transform.position.z) <= minZ){					
 				Room = x;
+				Color color = x.transform.renderer.material.color;
+				color.a = 1f;
+				x.transform.renderer.material.color = color;
 				minX = Mathf.Abs(transform.position.x - x.transform.position.x);
 				minZ = Mathf.Abs(transform.position.z - x.transform.position.z);
 			}
+			else{
+				Color color = x.transform.renderer.material.color;
+				color.a = 0.5f;
+				x.transform.renderer.material.color = color;
+			}
 		}
-		Debug.Log(Room.transform.position);
 
 		return Room;
 	}

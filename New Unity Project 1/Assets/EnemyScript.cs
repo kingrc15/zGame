@@ -42,6 +42,5 @@ public class EnemyScript : MonoBehaviour {
 		transform.LookAt (player.transform.position);
 		rigidbody.velocity = dir * enemySpeed;
 		Vector3 Dir = Vector3.RotateTowards (transform.position, player.transform.position, 360, 0.0f);
-		Debug.DrawLine (transform.position, player.transform.position ,Color.blue);
 	}
 }
